@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="./js/tailwind.js"></script>
+    <title>Serif</title>
+  </head>
+  <body
+    class="h-full font-['Lora'] bg-white text-[#2D2D2D] max-w-[426px] px-4 md:max-w-[768px] lg:max-w-[1440px]"
+  >
+    <div class="container h-full w-90% md:w-[88%] lg:w-[60%] mx-auto py-2">
+      <div class="header mb-6 flex justify-between items-center">
+        <img src="./images/iconoir_book.svg" alt="" />
+        <div class="flex items-center">
+          <div class="navbar bg-white z-10">
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <details>
+                    <summary>Seref</summary>
+                    <ul class="p-2 bg-white rounded-t-none nav">
+                      <li class="bg-inherit">
+                        <a href="./index.html">Sans-serif</a>
+                      </li>
+                      <li><a href="./serif.html">Serif</a></li>
+                      <li><a href="./moon.html">Mono</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="h-[32px] w-[1px] bg-[#2D2D2D] mr-4"></div>
+          <img
+            class="cursor-pointer"
+            onclick="darkk()"
+            id="dark"
+            src="./images/icons.svg"
+          />
+        </div>
+      </div>
+      <div class="form relative mb-6">
+        <form id="form">
+          <input
+            type="text"
+            class="w-[327px] md:w-full h-[48px] rounded-[16px] bg-[#F4F4F4] text-[16px] text-inherit font-bold p-4 border-none -z-1"
+            name=""
+            id="inp"
+          />
+          <img
+            class="absolute top-[16px] right-[29px]"
+            src="./images/iconoir_search.svg"
+            alt=""
+          />
+        </form>
+      </div>
+      <div class="hero flex w-full justify-between mb-[32px]">
+        <div class="flex flex-col gap-[8px]">
+          <h3 id="name" class="text-[32px] md:text-[64px] font-bold">
+            Keybord
+          </h3>
+          <span class="text-[18px] text-[#A445ED] md:text-[24px]" id="aytilishi"
+            >/kibɔd/</span
+          >
+        </div>
+        <button id="audeo">
+          <img
+            id="imag"
+            class="w-[75px] h-[75px]"
+            src="./images/audeo.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="w-full flex items-center mb-8">
+        <span class="text-[18px] md:text-[24px] font-bold mr-4">noun</span>
+        <div class="w-[266px] h-[1px] bg-[#E9E9E9]"></div>
+      </div>
+      <h3 class="text-[16px] md:text-[20px] text-[#757575] mb-[17px]">
+        Meaning
+      </h3>
+      <div id="noneMean" class="meanig flex flex-col gap-[13px]">
+        <div class="flex gap-[20px] md:ml-4 items-center">
+          <img src="./images/Oval (9).svg" class="w-[5px] h-[5px]" alt="" />
+          <p class="text-[15px] md:text-[18px]" id="meanig">
+            (etc.) A set of keys used to operate a typewriter, computer etc.
+          </p>
+        </div>
+      </div>
+      <div class="syn flex gap-6 mb-[33px]">
+        <span class="text-[16px] md:text-[20px] text-[#757575]">Synonyms</span>
+        <p
+          class="text-[16px] md:text-[20px] font-bold text-[#A445ED]"
+          id="synonem"
+        ></p>
+      </div>
+      <div class="w-full flex items-center mb-8">
+        <span class="text-[18px] font-bold mr-4">verb</span>
+        <div class="w-[266px] h-[1px] bg-[#E9E9E9]"></div>
+      </div>
+      <h3 class="text-[16px] md:text-[20px] text-[#757575] mb-[17px]">
+        Meaning
+      </h3>
+      <div id="verbMean" class="meanig flex flex-col gap-[13px]">
+        <div class="flex gap-[20px] items-center md:ml-4">
+          <img src="./images/Oval (9).svg" class="w-[5px] h-[5px]" alt="" />
+          <p class="text-[15px] md:text-[18px]" id="meanig">
+            (etc.) A set of keys used to operate a typewriter, computer etc.
+          </p>
+        </div>
+      </div>
+      <div class="mt-[32px] mb=[24px] w-full h-[1px] bg-[#E9E9E9]"></div>
+      <div class="flex gap-[9px] pb-[20px]">
+        <span id="link" class="text-[14px] md:text-[16px] text-[#2D2D2D]"
+          >https://en.wiktionary.org/wiki/keyboard</span
+        >
+        <a href="https://en.wiktionary.org/wiki/keyboard">
+          <img src="./images/link.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <script src="./js/dom.js"></script>
+    <script src="./js/speach.js"></script>
+    <script src="./js/mode.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
